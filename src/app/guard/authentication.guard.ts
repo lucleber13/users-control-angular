@@ -15,10 +15,7 @@ export class AuthenticationGuard implements CanActivate {
     private notificationService: NotificationService
   ) {}
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): boolean {
+  canActivate( next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     return this.isUserLoggedIn();
   }
 
