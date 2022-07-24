@@ -1,9 +1,10 @@
+import { HttpClient, HttpErrorResponse, HttpEvent } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpEvent, HttpResponse } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { User } from '../model/user';
+import { environment } from 'src/environments/environment';
+
 import { CustomHttpResponse } from '../model/custom-http-response';
+import { User } from '../model/user';
 
 @Injectable({
   providedIn: 'root'
